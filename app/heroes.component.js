@@ -34,8 +34,8 @@ var HeroesComponent = (function () {
         core_1.Component({
             selector: 'my-heroes',
             providers: [hero_service_1.HeroService],
-            templateUrl: 'app/heroes.component.html',
-            styleUrls: ['app/heroes.component.css']
+            templateUrl: 'angular2-quickstart/app/heroes.component.html',
+            styleUrls: ['angular2-quickstart/app/heroes.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])
     ], HeroesComponent);

@@ -13,7 +13,7 @@ var appRoutes = [
         component: dashboard_component_1.DashboardComponent
     },
     {
-        path: '',
+        path: 'angular2-quickstart',
         redirectTo: '/dashboard',
         pathMatch: 'full'
     },

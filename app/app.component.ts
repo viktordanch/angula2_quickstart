@@ -12,7 +12,7 @@ import { DashboardComponent } from './dashboard.component';
      </nav>
      <router-outlet></router-outlet>
    `,
-  styleUrls: ['app/app.component.css'],
+  styleUrls: ['angular2-quickstart/app/app.component.css'],
 })
 
 export class AppComponent {

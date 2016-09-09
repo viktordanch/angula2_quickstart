@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Hero } from './hero';
@@ -6,8 +6,8 @@ import { HeroService } from './hero.service';
 
 @Component({
   selector: 'my-dashboard',
-  templateUrl: 'app/dashboard.component.html',
-  styleUrls: ['app/dashboard.component.css'],
+  templateUrl: 'angular2-quickstart/app/dashboard.component.html',
+  styleUrls: ['angular2-quickstart/app/dashboard.component.css'],
   providers: [HeroService],
 })
 

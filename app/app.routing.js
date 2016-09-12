@@ -3,6 +3,7 @@ var router_1 = require('@angular/router');
 var heroes_component_1 = require('./heroes.component');
 var dashboard_component_1 = require('./dashboard.component');
 var hero_detail_component_1 = require('./hero-detail.component');
+var config_1 = require('./config');
 var appRoutes = [
     {
         path: 'heroes',
@@ -13,7 +14,7 @@ var appRoutes = [
         component: dashboard_component_1.DashboardComponent
     },
     {
-        path: 'angular2-quickstart',
+        path: config_1.CONFIG.rootFolder,
         redirectTo: '/dashboard',
         pathMatch: 'full'
     },

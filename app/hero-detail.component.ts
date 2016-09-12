@@ -3,11 +3,12 @@ import { ActivatedRoute, Params } from '@angular/router';
 
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
+import { CONFIG } from './config';
 
 @Component({
   selector: 'my-hero-detail',
-  templateUrl: 'angular2-quickstart/app/hero-detail.component.html',
-  styleUrls: ['angular2-quickstart/app/hero-detail.component.css'],
+  templateUrl: CONFIG.rootFolder + 'app/hero-detail.component.html',
+  styleUrls: [CONFIG.rootFolder + 'app/hero-detail.component.css'],
   providers: [HeroService],
 })
 

@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var hero_service_1 = require('./hero.service');
 var router_1 = require('@angular/router');
+var config_1 = require('./config');
 var HeroesComponent = (function () {
     function HeroesComponent(router, heroService) {
         this.router = router;
@@ -34,8 +35,8 @@ var HeroesComponent = (function () {
         core_1.Component({
             selector: 'my-heroes',
             providers: [hero_service_1.HeroService],
-            templateUrl: 'angular2-quickstart/app/heroes.component.html',
-            styleUrls: ['angular2-quickstart/app/heroes.component.css']
+            templateUrl: config_1.CONFIG.rootFolder + 'app/heroes.component.html',
+            styleUrls: [config_1.CONFIG.rootFolder + 'app/heroes.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])
     ], HeroesComponent);

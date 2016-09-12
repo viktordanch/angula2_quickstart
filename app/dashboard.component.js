@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var hero_service_1 = require('./hero.service');
+var config_1 = require('./config');
 var DashboardComponent = (function () {
     function DashboardComponent(router, heroService) {
         this.router = router;
@@ -29,8 +30,8 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'my-dashboard',
-            templateUrl: 'angular2-quickstart/app/dashboard.component.html',
-            styleUrls: ['angular2-quickstart/app/dashboard.component.css'],
+            templateUrl: config_1.CONFIG.rootFolder + 'app/dashboard.component.html',
+            styleUrls: [config_1.CONFIG.rootFolder + 'app/dashboard.component.css'],
             providers: [hero_service_1.HeroService],
         }), 
         __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { HeroesComponent } from './heroes.component';
 import { DashboardComponent } from './dashboard.component';
 
+import { CONFIG } from './config';
+
 @Component({
   selector: 'my-app',
   template: `
@@ -12,7 +14,7 @@ import { DashboardComponent } from './dashboard.component';
      </nav>
      <router-outlet></router-outlet>
    `,
-  styleUrls: ['angular2-quickstart/app/app.component.css'],
+  styleUrls: [CONFIG.rootFolder + 'app/app.component.css'],
 })
 
 export class AppComponent {

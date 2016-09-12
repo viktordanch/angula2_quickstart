@@ -1,13 +1,11 @@
 import { ModuleWithProviders }  from '@angular/core';
-import { Routes, RouterModule, RouteConfig} from '@angular/router';
+import { Routes, RouterModule} from '@angular/router';
 
 import { HeroesComponent }      from './heroes.component';
 import { DashboardComponent }      from './dashboard.component';
 import { HeroDetailComponent }      from './hero-detail.component';
 
-@RouteConfig([
-  { path: '/dashboard', component: Dashboard, as: 'dashboard'}
-])
+import { CONFIG } from './config';
 
 const appRoutes: Routes = [
   {
@@ -19,7 +17,7 @@ const appRoutes: Routes = [
     component: DashboardComponent
   },
   {
-    path: 'angular2-quickstart',
+    path: CONFIG.rootFolder,
     redirectTo: '/dashboard',
     pathMatch: 'full'
   },

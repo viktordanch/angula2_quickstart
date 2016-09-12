@@ -3,11 +3,12 @@ import { Router } from '@angular/router';
 
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
+import { CONFIG } from './config';
 
 @Component({
   selector: 'my-dashboard',
-  templateUrl: 'angular2-quickstart/app/dashboard.component.html',
-  styleUrls: ['angular2-quickstart/app/dashboard.component.css'],
+  templateUrl: CONFIG.rootFolder + 'app/dashboard.component.html',
+  styleUrls: [CONFIG.rootFolder + 'app/dashboard.component.css'],
   providers: [HeroService],
 })
 

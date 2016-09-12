@@ -3,12 +3,13 @@ import { Hero } from './hero';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroService } from './hero.service';
 import { Router } from '@angular/router';
+import { CONFIG } from './config';
 
 @Component({
   selector: 'my-heroes',
   providers: [HeroService],
-  templateUrl: 'angular2-quickstart/app/heroes.component.html',
-  styleUrls:  ['angular2-quickstart/app/heroes.component.css']
+  templateUrl: CONFIG.rootFolder + 'app/heroes.component.html',
+  styleUrls: [CONFIG.rootFolder + 'app/heroes.component.css']
 })
 
 export class HeroesComponent implements OnInit  {
